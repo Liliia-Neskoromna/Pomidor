@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		221262DE2475373A003B2D6E /* CircularSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221262DD2475373A003B2D6E /* CircularSlider.swift */; };
 		225EA942246AC11800A64C7F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225EA941246AC11800A64C7F /* AppDelegate.swift */; };
 		225EA944246AC11800A64C7F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225EA943246AC11800A64C7F /* SceneDelegate.swift */; };
 		225EA946246AC11800A64C7F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225EA945246AC11800A64C7F /* ViewController.swift */; };
@@ -16,9 +17,11 @@
 		225EA951246AC11A00A64C7F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 225EA94F246AC11A00A64C7F /* LaunchScreen.storyboard */; };
 		229CC476246C4F6C009CB036 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229CC475246C4F6C009CB036 /* CustomButton.swift */; };
 		22D5C80A246E9EDB00623225 /* gong.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 22D5C809246E9EDB00623225 /* gong.mp3 */; };
+		6070DE318D6BA8B534DC5529 /* Pods_Pomidor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 488ED8ED73183F20C726DD90 /* Pods_Pomidor.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		221262DD2475373A003B2D6E /* CircularSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularSlider.swift; sourceTree = "<group>"; };
 		225EA93E246AC11800A64C7F /* Pomidor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pomidor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		225EA941246AC11800A64C7F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		225EA943246AC11800A64C7F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -30,6 +33,9 @@
 		225EA952246AC11A00A64C7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		229CC475246C4F6C009CB036 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		22D5C809246E9EDB00623225 /* gong.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gong.mp3; sourceTree = "<group>"; };
+		488ED8ED73183F20C726DD90 /* Pods_Pomidor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pomidor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8318FF54B0394C60B23FB801 /* Pods-Pomidor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pomidor.debug.xcconfig"; path = "Target Support Files/Pods-Pomidor/Pods-Pomidor.debug.xcconfig"; sourceTree = "<group>"; };
+		856E1BE42CAADB1C3B7F4581 /* Pods-Pomidor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pomidor.release.xcconfig"; path = "Target Support Files/Pods-Pomidor/Pods-Pomidor.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,17 +43,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6070DE318D6BA8B534DC5529 /* Pods_Pomidor.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2220409D24754B7B00EF0E7E /* Custom View */ = {
+			isa = PBXGroup;
+			children = (
+				229CC475246C4F6C009CB036 /* CustomButton.swift */,
+			);
+			path = "Custom View";
+			sourceTree = "<group>";
+		};
 		225EA935246AC11800A64C7F = {
 			isa = PBXGroup;
 			children = (
 				225EA940246AC11800A64C7F /* Pomidor */,
 				225EA93F246AC11800A64C7F /* Products */,
+				4545F4B56614421276A40008 /* Pods */,
+				33B2C6D94C22FBC2BD58E280 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,13 +82,14 @@
 				225EA941246AC11800A64C7F /* AppDelegate.swift */,
 				225EA943246AC11800A64C7F /* SceneDelegate.swift */,
 				225EA945246AC11800A64C7F /* ViewController.swift */,
+				221262DD2475373A003B2D6E /* CircularSlider.swift */,
 				225EA947246AC11800A64C7F /* Main.storyboard */,
+				2220409D24754B7B00EF0E7E /* Custom View */,
+				22D5C80B246E9EE000623225 /* Sounds */,
 				225EA94D246AC11A00A64C7F /* Assets.xcassets */,
 				225EA94F246AC11A00A64C7F /* LaunchScreen.storyboard */,
-				22D5C80B246E9EE000623225 /* Sounds */,
 				225EA952246AC11A00A64C7F /* Info.plist */,
 				225EA94A246AC11800A64C7F /* Pomidor.xcdatamodeld */,
-				229CC475246C4F6C009CB036 /* CustomButton.swift */,
 			);
 			path = Pomidor;
 			sourceTree = "<group>";
@@ -84,6 +102,23 @@
 			path = Sounds;
 			sourceTree = "<group>";
 		};
+		33B2C6D94C22FBC2BD58E280 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				488ED8ED73183F20C726DD90 /* Pods_Pomidor.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4545F4B56614421276A40008 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8318FF54B0394C60B23FB801 /* Pods-Pomidor.debug.xcconfig */,
+				856E1BE42CAADB1C3B7F4581 /* Pods-Pomidor.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -91,9 +126,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 225EA955246AC11A00A64C7F /* Build configuration list for PBXNativeTarget "Pomidor" */;
 			buildPhases = (
+				BAA29D09E1F8628851E13CCD /* [CP] Check Pods Manifest.lock */,
 				225EA93A246AC11800A64C7F /* Sources */,
 				225EA93B246AC11800A64C7F /* Frameworks */,
 				225EA93C246AC11800A64C7F /* Resources */,
+				237FAA36A2259568C4CE16A7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,6 +188,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		237FAA36A2259568C4CE16A7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Pomidor/Pods-Pomidor-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Pomidor/Pods-Pomidor-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Pomidor/Pods-Pomidor-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BAA29D09E1F8628851E13CCD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Pomidor-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		225EA93A246AC11800A64C7F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -161,6 +240,7 @@
 				225EA94C246AC11800A64C7F /* Pomidor.xcdatamodeld in Sources */,
 				225EA944246AC11800A64C7F /* SceneDelegate.swift in Sources */,
 				229CC476246C4F6C009CB036 /* CustomButton.swift in Sources */,
+				221262DE2475373A003B2D6E /* CircularSlider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +382,7 @@
 		};
 		225EA956246AC11A00A64C7F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8318FF54B0394C60B23FB801 /* Pods-Pomidor.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -320,6 +401,7 @@
 		};
 		225EA957246AC11A00A64C7F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 856E1BE42CAADB1C3B7F4581 /* Pods-Pomidor.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
