@@ -20,6 +20,9 @@ class CircularSlider: UIViewController, MSCircularSliderDelegate {
     @IBAction func goToTimer(_ sender: UIButton) {
         performSegue(withIdentifier: "showTimer", sender: nil)
     }
+    @IBAction func goToStatistic(_ sender: Any) {
+        performSegue(withIdentifier: "showStatistic", sender: nil)
+    }
     
     @IBAction func setSliderValue(_ sender: UIStepper) {
         currentValue = slider.currentValue

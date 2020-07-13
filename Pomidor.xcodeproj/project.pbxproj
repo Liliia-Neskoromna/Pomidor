@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		221262DE2475373A003B2D6E /* CircularSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221262DD2475373A003B2D6E /* CircularSlider.swift */; };
+		22549EEC24BA0885009BEAFF /* BarChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22549EEB24BA0885009BEAFF /* BarChartViewController.swift */; };
+		22549EEE24BA1638009BEAFF /* BarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22549EED24BA1638009BEAFF /* BarCell.swift */; };
 		225EA942246AC11800A64C7F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225EA941246AC11800A64C7F /* AppDelegate.swift */; };
 		225EA944246AC11800A64C7F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225EA943246AC11800A64C7F /* SceneDelegate.swift */; };
 		225EA946246AC11800A64C7F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225EA945246AC11800A64C7F /* ViewController.swift */; };
@@ -22,6 +24,8 @@
 
 /* Begin PBXFileReference section */
 		221262DD2475373A003B2D6E /* CircularSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularSlider.swift; sourceTree = "<group>"; };
+		22549EEB24BA0885009BEAFF /* BarChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartViewController.swift; sourceTree = "<group>"; };
+		22549EED24BA1638009BEAFF /* BarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarCell.swift; sourceTree = "<group>"; };
 		225EA93E246AC11800A64C7F /* Pomidor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pomidor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		225EA941246AC11800A64C7F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		225EA943246AC11800A64C7F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +87,8 @@
 				225EA943246AC11800A64C7F /* SceneDelegate.swift */,
 				225EA945246AC11800A64C7F /* ViewController.swift */,
 				221262DD2475373A003B2D6E /* CircularSlider.swift */,
+				22549EEB24BA0885009BEAFF /* BarChartViewController.swift */,
+				22549EED24BA1638009BEAFF /* BarCell.swift */,
 				225EA947246AC11800A64C7F /* Main.storyboard */,
 				2220409D24754B7B00EF0E7E /* Custom View */,
 				22D5C80B246E9EE000623225 /* Sounds */,
@@ -235,10 +241,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22549EEC24BA0885009BEAFF /* BarChartViewController.swift in Sources */,
 				225EA946246AC11800A64C7F /* ViewController.swift in Sources */,
 				225EA942246AC11800A64C7F /* AppDelegate.swift in Sources */,
 				225EA94C246AC11800A64C7F /* Pomidor.xcdatamodeld in Sources */,
 				225EA944246AC11800A64C7F /* SceneDelegate.swift in Sources */,
+				22549EEE24BA1638009BEAFF /* BarCell.swift in Sources */,
 				229CC476246C4F6C009CB036 /* CustomButton.swift in Sources */,
 				221262DE2475373A003B2D6E /* CircularSlider.swift in Sources */,
 			);

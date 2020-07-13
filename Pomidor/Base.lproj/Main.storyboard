@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8iI-kJ-Lm2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8iI-kJ-Lm2">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -71,7 +72,42 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5428.985507246377" y="138.61607142857142"/>
+            <point key="canvasLocation" x="5512" y="518"/>
+        </scene>
+        <!--Bar Chart View Controller-->
+        <scene sceneID="VNu-vq-NOE">
+            <objects>
+                <collectionViewController id="EuH-Fm-m4H" customClass="BarChartViewController" customModule="Pomidor" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="SBU-m0-kdl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="mS2-Pq-uNd">
+                            <size key="itemSize" width="128" height="128"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="qWr-gJ-buz">
+                                <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="BxY-Ld-Hcz">
+                                    <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </collectionViewCellContentView>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="EuH-Fm-m4H" id="92u-4P-VGx"/>
+                            <outlet property="delegate" destination="EuH-Fm-m4H" id="ITN-xb-t03"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="SRq-DV-Aep"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2v3-Se-7Ul" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5512" y="-205"/>
         </scene>
         <!--Circler Timer-->
         <scene sceneID="myH-ST-PXJ">
@@ -168,6 +204,17 @@
                                     <action selector="buttonPress:" destination="bs2-j3-l6N" eventType="touchUpInside" id="dyl-AS-oUk"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f8y-1H-fsg">
+                                <rect key="frame" x="318" y="758" width="76" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Statistic">
+                                    <color key="titleColor" red="1" green="0.5165559649" blue="0.60750097039999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="goToStatistic:" destination="bs2-j3-l6N" eventType="touchUpInside" id="Jev-Ro-kMv"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.80060106515884399" green="0.97270268201828003" blue="0.97843819856643677" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="dwJ-ye-aRE"/>
@@ -202,6 +249,7 @@
                         <outlet property="startStopButton" destination="klh-LA-5NW" id="RXK-Ec-gZp"/>
                         <outlet property="valueLbl" destination="2D5-6S-7XI" id="bcb-qF-LwI"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="showTimer" id="S4t-3e-Io3"/>
+                        <segue destination="EuH-Fm-m4H" kind="show" identifier="showStatistic" id="NHd-p5-UPL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PkW-tq-0mU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
