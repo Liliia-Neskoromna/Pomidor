@@ -19,6 +19,13 @@ class BarCell: UICollectionViewCell {
     
     var barHeigthConstraint: NSLayoutConstraint?
     
+    override var isHighlighted: Bool {
+        didSet {
+            barView.backgroundColor = isHighlighted ? .black : .gray
+            
+        }
+    }
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         addSubview(barView)
